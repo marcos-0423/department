@@ -1,5 +1,115 @@
 {% extends "spc/layout.html" %}
 {% block content %}
-    <h1>SPC</h1>
-    <p>Welcome to the SPC app!</p>
+   
+
+
+<div class="a4-page">
+
+    <!-- القسم الأول: البطاقة الشخصية للمريض -->
+    <div class="main-title">البطاقة الشخصية للمريض</div>
+
+    <div class="form-row">
+        <span class="label">الاسم والنسبة:</span>
+        <div class="dots" style="flex-grow: 2;"></div>
+        <span class="label">الأب:</span>
+        <div class="dots"></div>
+        <span class="label">الأم:</span>
+        <div class="dots"></div>
+        <span class="label">الجنسية:</span>
+        <div class="dots"></div>
+    </div>
+
+    <div class="form-row">
+        <span class="label">مكان وتاريخ الولادة:</span>
+        <div class="dots"></div>
+    </div>
+
+    <div class="form-row">
+        <span class="label">الحالة العائلية:</span>
+        <div class="checkbox-group">
+            <span class="label">متأهل</span>
+            <div class="box"></div>
+        </div>
+        <div class="checkbox-group" style="margin-left: 40px;">
+            <span class="label">غير متأهل</span>
+            <div class="box"></div>
+        </div>
+        <span class="label">عدد الأولاد:</span>
+        <div class="box" style="margin-right: 10px;"></div>
+    </div>
+
+    <div class="form-row">
+        <span class="label">عنوان الإقامة:</span>
+        <div class="dots"></div>
+    </div>
+
+    <div class="form-row">
+        <span class="label">الهاتف: الأرضي:</span>
+        <div class="dots"></div>
+        <span class="label">جوال:</span>
+        <div class="dots"></div>
+    </div>
+
+    <div class="form-row">
+        <span class="label">رقم الهوية:</span>
+        <div class="dots" style="max-width: 250px;"></div>
+        <span class="label">اسم صاحب الهوية ودرجة القرابة:</span>
+        <div class="dots"></div>
+    </div>
+
+    <!-- الفاصل المزدوج الأوسط -->
+    <div class="divider"></div>
+
+    <!-- القسم الثاني: تصريح الموافقة -->
+    <div class="consent-section">
+        <div class="consent-title">تصريح الموافقة على اجراء معالجة جراحية أو غير جراحية</div>
+        <p class="consent-text">
+            أنا الموقع أدناه أصرح بأنني اطلعت على الحالة المرضية والمعالجة الجراحية اللازمة لذا ثبتت موافقتي على ذلك وبما يقتضيه من اجراءات علاجية دوائية وجراحية وتخديرية ونقل دم وأفوض الكادر الطبي بإجراء ما يرونه مناسباً حسب تقدير كل منهم دون تحميلهم أي مسؤولية كما أتعهد بدفع كل ما يترتب علي من مبالغ مادية.
+        </p>
+
+        <div class="form-row">
+            <span class="label">الاسم:</span>
+            <div class="dots"></div>
+            <span class="label">درجة القرابة:</span>
+            <div class="dots"></div>
+            <span class="label">التوقيع:</span>
+            <div class="dots"></div>
+        </div>
+    </div>
+
+    <!-- القسم الثالث: صندوق السلفة والإيصال الجانبي -->
+    <div class="receipt-box">
+        <div class="form-row">
+            <span class="label">إيصال رقم:</span>
+            <div class="dots" style="max-width: 150px;"></div>
+            <span class="label">بتاريخ:</span>
+            <div class="dots" style="max-width: 40px;"></div>
+            <span>/</span>
+            <div class="dots" style="max-width: 40px;"></div>
+            <span>/ ٢٠</span>
+            <div class="dots" style="max-width: 40px;"></div>
+        </div>
+
+        <div class="form-row">
+            <span class="label">قيمة السلفة المدفوعة:</span>
+            <div class="dots"></div>
+        </div>
+
+        <div class="form-row">
+            <span class="label">الدافع:</span>
+            <div class="dots"></div>
+            <span class="label">التوقيع:</span>
+            <div class="dots"></div>
+        </div>
+    </div>
+
+    <!-- رقم الصفحة السفلي -->
+    <div class="page-number">( ٢ )</div>
+
+</div>
+
+
+
+
+    
 {% endblock %}

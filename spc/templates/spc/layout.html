@@ -1,10 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
 
+<style>
+    
+
+        @import url('https://googleapis.com');
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #000;
+        }
+
+        .a4-page {
+            width: 210mm;
+            min-height: 297mm;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 22px;
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .label {
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .dots {
+            flex-grow: 1;
+            border-bottom: 1px dotted #000;
+            margin: 0 8px;
+            height: 15px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .box {
+            width: 20px;
+            height: 20px;
+            border: 1.5px solid #000;
+            margin-right: 8px;
+        }
+
+        .divider {
+            border-top: 3px double #000;
+            margin: 40px 0;
+        }
+
+        .consent-section {
+            margin-top: 30px;
+        }
+
+        .consent-title {
+            text-align: center;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .consent-text {
+            text-align: justify;
+            line-height: 2.2;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .receipt-box {
+            border: 2px solid #000;
+            padding: 25px;
+            width: 65%;
+            margin-right: auto;
+            margin-top: 50px;
+            box-sizing: border-box;
+        }
+
+        .receipt-box .form-row {
+            margin-bottom: 18px;
+        }
+
+        .page-number {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .a4-page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
 {% block content %}
